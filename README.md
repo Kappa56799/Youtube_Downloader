@@ -4,6 +4,8 @@
 
 <h2>Setup</h2>
 <h3>Required</h3>
+
+
 [Python](https://www.python.org/)
 [Pip](https://packaging.python.org/en/latest/tutorials/installing-packages/)
   

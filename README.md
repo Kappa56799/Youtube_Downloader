@@ -15,6 +15,11 @@ Use pip to install everything needed to allow this to work!
 
 
 `pip install -r 'requirements.txt'`
+<h2></h2>
+Use python to run the program after installing all the requirements.
+
+
+`python downloader.py`
 
 
 <h2>Screenshots</h2>

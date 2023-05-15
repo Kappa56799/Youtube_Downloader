@@ -11,8 +11,10 @@
 [Pip](https://packaging.python.org/en/latest/tutorials/installing-packages/)
   
 <h2>Dependencies</h2>
+Use pip to install everything needed to allow this to work!
 
 
-'pip install -r requirements.txt'
+`pip install -r 'requirements.txt'`
+
 
 <h2>Screenshots</h2>

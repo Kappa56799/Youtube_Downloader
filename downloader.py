@@ -3,7 +3,7 @@ import customtkinter as ctk
 from threading import Thread
 from moviepy.editor import *
 
-ctk.set_appearance_mode("dark")
+ctk.set_appearance_mode("system")
 ctk.set_default_color_theme("dark-blue")
 
 root = ctk.CTk()

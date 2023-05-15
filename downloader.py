@@ -3,7 +3,7 @@ import customtkinter as ctk
 from threading import Thread
 from moviepy.editor import *
 
-ctk.set_appearance_mode("system")
+ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
 
 root = ctk.CTk()
@@ -29,9 +29,11 @@ def downloadFile():
 def UploadAction(event=None):
     filename = ctk.filedialog.askopenfilename()
     print('Selected:', filename)
+    progressbar2.set(50)
 
     video = VideoFileClip(filename)
     video.audio.write_audiofile(filename[:-4] + ".mp3")
+    progressbar2.set(100)
     
 
 frame = ctk.CTkFrame(master=root)
@@ -56,6 +58,10 @@ label.pack(pady=12, padx=10)
 
 button = ctk.CTkButton(master=frame, width=150, text="Select A File and Convert", command=UploadAction)
 button.pack(pady=12, padx=10)
+
+progressbar2 = ctk.CTkProgressBar(master=frame,mode="determinate", width=400)
+progressbar2.pack(pady=20, padx=10)
+progressbar2.set(0)
 
 
 root.mainloop()

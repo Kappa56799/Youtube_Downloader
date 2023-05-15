@@ -4,8 +4,8 @@
 
 <h2>Setup</h2>
 <h3>Required</h3>
-<p>Python<p>
-<p>Pip<p>
+[Python](https://www.python.org/)
+[Pip](https://packaging.python.org/en/latest/tutorials/installing-packages/)
   
 <h2>Dependencies</h2>
 'pip install -r requirements.txt'
